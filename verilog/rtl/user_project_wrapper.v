@@ -76,7 +76,8 @@ module user_project_wrapper #(
 
     // User maskable interrupt signals
     output [2:0] user_irq
-);
+
+    );
 
 /*--------------------------------------*/
 /* User project is instantiated  here   */
@@ -117,6 +118,8 @@ user_proj_example mprj (
     // IRQ
     .irq(user_irq)
 );
+
+Prova_OpenLane mprj_2(.clk(wb_clk_i), .rst(wb_rst_i), .en(io_in[8]), .A(io_in[12:9]), .B(io_in[16:13]), .S(io_out[11:8]));
 
 endmodule	// user_project_wrapper
 
