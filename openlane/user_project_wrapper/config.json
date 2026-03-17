@@ -1,10 +1,8 @@
 
 {
-    "DESIGN_NAME": "user_project_wrapper",
+    "DESIGN_NAME": "Prova_OpenLane",
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/defines.v",
-        "dir::../../verilog/rtl/user_project_wrapper.v",
-        "dir::../../verilog/rtl/Sum_4_bits.v",
         "dir::../../verilog/rtl/Prova_OpenLane.v"
     ],
     "ROUTING_CORES": 1,
@@ -13,17 +11,15 @@
     "CLOCK_NET": "mprj.clk",
     "FP_PDN_MACRO_HOOKS": "mprj vccd1 vssd1 vccd1 vssd1",
     "MAGIC_DEF_LABELS": 0,
-    "VERILOG_FILES_BLACKBOX": [
-        "dir::../../verilog/gl/user_proj_example.v", "dir::../../verilog/rtl/Prova_OpenLane.v"
-    ],
-    "EXTRA_LEFS": ["dir::../../lef/user_proj_example.lef", "dir::../../lef/Prova_OpenLane.lef"],
-    "EXTRA_GDS_FILES": ["dir::../../gds/user_proj_example.gds","dir::../../gds/Prova_OpenLane.gds"],
-    "EXTRA_LIBS": "dir::../../lib/user_proj_example.lib",
+    "VERILOG_FILES_BLACKBOX": "dir::../../verilog/rtl/Prova_OpenLane.v",
+    "EXTRA_LEFS": "dir::../../lef/Prova_OpenLane.lef",
+    "EXTRA_GDS_FILES": "dir::../../gds/Prova_OpenLane.gds",
+    "EXTRA_LIBS": "dir::../../lib/Prova_OpenLane.lib",
     "EXTRA_SPEFS": [
-        "user_proj_example", 
-        "dir::../../spef/multicorner/user_proj_example.min.spef", 
-        "dir::../../spef/multicorner/user_proj_example.nom.spef", 
-        "dir::../../spef/multicorner/user_proj_example.max.spef"
+        "Prova_OpenLane", 
+        "dir::../../spef/multicorner/Prova_OpenLane.min.spef", 
+        "dir::../../spef/multicorner/Prova_OpenLane.nom.spef", 
+        "dir::../../spef/multicorner/Prova_OpenLane.max.spef"
     ],
     "BASE_SDC_FILE": "dir::base_user_project_wrapper.sdc",
     "IO_SYNC": 0,
